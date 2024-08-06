@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spacond Store</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&family=Protest+Riot&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch+Pop&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="image/cropped_image.png" />
+  </head>
+
+  <body>
+    <!-- Loading Screen -->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Navbar Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand font" href="#"
+          ><span class="text-info font">SPA</span>COND</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feature">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Beranda -->
+    <div id="beranda">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!-- Slide 1 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="image/slide-3.jpeg"
+              class="d-block w-100 mt-5 pt-2"
+              alt="slide-1"
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Desain Modern</h5>
+              <p>
+                Desain yang modern dan tidak ketinggalan jaman, yang membuat
+                anda tampil kece dan hedon pada setiap langkahnya.
+              </p>
+              <p><a href="shop.html" class="btn btn-info mt-2">Shop Now</a></p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img
+              src="image/slide-2.jpg"
+              class="d-block w-100 mt-5 pt-2"
+              alt="slide-2"
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Kualitas Unggulan</h5>
+              <p>
+                Dengan kualitas unggulan, setiap langkah adalah pernyataan
+                tentang kepercayaan diri dan gaya yang tak tertandingi.
+              </p>
+              <p><a href="shop.html" class="btn btn-info mt-2">Shop Now</a></p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img
+              src="image/slide-1.webp"
+              class="d-block w-100 mt-5 pt-2"
+              alt="slide-3"
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Harga Terjangkau</h5>
+              <p>
+                Dengan sepatu harga terjangkau, setiap langkah adalah gaya dan
+                kenyamanan tanpa menguras dompet.
+              </p>
+              <p><a href="shop.html" class="btn btn-info mt-2">Shop Now</a></p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- About section -->
+
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="about-img">
+              <img
+                src="image/sepatu-abouta.jpg"
+                alt=""
+                class="img-fluid mb-5"
+              />
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-12 ps-lg-4 mt-md-5">
+            <div class="about-text">
+              <h2>Apa itu Spacond?</h2>
+              <p>
+                Spacond adalah Toko Sepatu online second/bekas yang memiliki
+                desain, kualitas, dan harga yang terbaik. Nama Spaond berasal
+                dari kata "SePAtu" dan "seCOND".
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="about-img">
+              <img
+                src="image/gambar-1.webp"
+                alt="gambar-sepatu"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-12 ps-lg-4 mt-md-5">
+            <div class="about-text">
+              <h2>Kami memberikan pengalaman Belanja online terbaik</h2>
+              <p>
+                Dari rumah, anda bisa melihat berbagai model dan merek, serta
+                ulasan pelanggan. Meski ada tantangan soal ukuran, kami
+                menyediakan panduan untuk membantu anda. Kami menjaga agar
+                pesanan anda tiba sesuai harapan. Rasakan kepuasan belanja
+                online di toko kami.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services action -->
+
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Layanan Kami</h2>
+              <p>
+                Mengutamakan kepuasan pelanggan dengan menyediakan produk
+                berkualitas dan layanan cepat.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-award-fill"></i>
+                <h3 class="card-title">Kualitas terbaik</h3>
+                <p class="lead">
+                  Sepatu kami menjamin kualitas terbaik, menggabungkan
+                  kenyamanan luar biasa, daya tahan tinggi, dan desain yang
+                  stylish, memastikan anda mendapatkan produk terbaik dihidup
+                  anda.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-recycle"></i>
+                <h3 class="card-title">Keberlanjutan</h3>
+                <p class="lead">
+                  Sepatu yang tersedia dirancang dengan bahan ramah lingkungan.
+                  Kami berkomitmen untuk menjaga kelestarian alam sambil
+                  memberikan kenyamanan dan gaya terbaik untuk setiap langkah
+                  anda.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-gem"></i>
+                <h3 class="card-title">Integritas</h3>
+                <p class="lead">
+                  Kami berbisnis dengan integritas, mengutamakan kualitas,
+                  kejujuran, dan transparasi dalam perniagaan. Dengan sepatu
+                  kami, Anda melangkah dengan percaya diri dan penuh integritas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+
+    <section id="feature" class="feature bg-dark text-white section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Feature</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="image/model-1.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title fw-bold">Comfort</h3>
+                <p class="lead">
+                  Terbuat dari bahan pilihan yang pastinya lembut dan
+                  breathable, serta sol ringan dan fleksibel yang dapat
+                  menciptakan kenyamanan sehari-hari.
+                </p>
+                <a href="shop.html"
+                  ><button class="btn bg-info text-dark">Shop Now</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="image/model-2.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title fw-bold">Sporty</h3>
+                <p class="lead">
+                  Didukung dengan bantalan responsif dan lengkungan yang
+                  sempurna memastikan performa olahraga yang maksimal, dan
+                  penampilan yang sporty.
+                </p>
+                <a href="shop.html"
+                  ><button class="btn bg-info text-dark">Shop Now</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="image/model-3.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title fw-bold">Stylish</h3>
+                <p class="lead">
+                  Menampilkan detail yang rapi dan finishing yang halus, sepatu
+                  ini cocok untuk berbagai kesempatan formal maupun kasual dan
+                  tampil maksimal.
+                </p>
+                <a href="shop.html"
+                  ><button class="btn bg-info text-dark">Shop Now</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team section -->
+
+    <section id="team" class="team section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>My Team</h2>
+              <p>
+                Di bawah ini adalah tim kami <br />
+                yang mengembangkan Spacond untuk Tugas Akhir
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-8 col-md-5 col-lg-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  src="image/foto-nugrah.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+                <h3 class="card-title py-2 fs-4">Fabianugerah Bainasshiddiq</h3>
+                <p class="card-text">
+                  "Kata-kata bukan soal ucapan, tapi makna yang berpengaruh bagi
+                  masa depan"
+                </p>
+
+                <p class="sosials">
+                  <a href="https://github.com/Fabianugerah" target="_blank"
+                    ><i class="bi bi-github text-dark mx-1"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/fbian_nugrhx/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                    target="_blank"
+                    ><i class="bi bi-instagram text-dark mx-1"></i
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/fabian.nugrah?mibextid=ZbWKwL"
+                    target="_blank"
+                    ><i class="bi bi-facebook text-dark mx-1"></i
+                  ></a>
+                  <a
+                    href="#team"
+                    onclick='alert("Hubungi pada email berikut \"fabianugerah@gmail.com\"");'
+                    ><i class="bi bi-envelope text-dark mx-1"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-md-5 col-lg-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  src="image/foto-hammam.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+                <h3 class="card-title py-2">Hammam Al-Fakkar</h3>
+                <p class="card-text">
+                  "Sayang itu bukan ngepost dimedia sosial, tapi menikahi
+                  itu baru sayang yang nyata"
+                </p>
+
+                <p class="sosials">
+                  <a
+                    href="#team"
+                    onclick="alert('Pengguna tidak memiliki github');"
+                  >
+                    <i class="bi bi-github text-dark mx-1"></i
+                  ></a>
+                  <a href="https://www.instagram.com/el.fckr/" target="_blank"
+                    ><i class="bi bi-instagram text-dark mx-1"></i
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/al.fakkar.140"
+                    target="_blank"
+                    ><i class="bi bi-facebook text-dark mx-1"></i
+                  ></a>
+                  <a
+                    href="#team"
+                    onclick='alert("Hubungi pada email berikut \"hammammm657@gmail.com\"");'
+                  >
+                    <i class="bi bi-envelope text-dark mx-1"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section-->
+
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Contact Us</h2>
+              <p>Sampaikan pengalaman belanja anda di bawah ini!!!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-12 p-0 pt-4 pb-4">
+            <form action="#" class="text-light p-4 m-auto">
+              <div class="row">
+                <!-- Nama -->
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Nama</label
+                >
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      required
+                      placeholder="Masukkan nama anda"
+                    />
+                  </div>
+                </div>
+                <!-- Email -->
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email address</label
+                >
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      required
+                      placeholder="Masukkan Email anda"
+                    />
+                  </div>
+                </div>
+                <!-- Pesan -->
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Pertanyaan</label
+                >
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <textarea
+                      rows="3"
+                      required
+                      class="form-control"
+                      placeholder="Ketikkan pesan"
+                    ></textarea>
+                  </div>
+                </div>
+                <button class="btn btn-warning btn-lg btn-block mt-3">
+                  Kirim
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer" class="bg-dark text-white pt-5 gb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Spacond Store
+            </h5>
+            <p>
+              Spacond adalah toko sepatu second yang menyediakan sepatu pilihan
+              dengan kualitas dan juga merek yang berkelas, tapi dengan harga
+              yang sangat sangat terjangkau pas yang membuat anda tampil dengan
+              keren dan badas.
+            </p>
+          </div>
+
+          <!-- Produk -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Produk
+            </h5>
+            <p>
+              <a href="shop.html" class="text-white text-decoration-none"
+                >Sneakers</a
+              >
+            </p>
+            <p>
+              <a href="shop.html" class="text-white text-decoration-none"
+                >Running</a
+              >
+            </p>
+          </div>
+
+          <!-- Layanan Menu -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Layanan Menu
+            </h5>
+            <p>
+              <a href="#beranda" class="text-white text-decoration-none"
+                >Beranda</a
+              >
+            </p>
+            <p>
+              <a href="#about" class="text-white text-decoration-none">About</a>
+            </p>
+            <p>
+              <a href="#services" class="text-white text-decoration-none"
+                >Services</a
+              >
+            </p>
+            <p>
+              <a href="#feature" class="text-white text-decoration-none"
+                >Feature</a
+              >
+            </p>
+            <p>
+              <a href="#team" class="text-white text-decoration-none">Team</a>
+            </p>
+            <p>
+              <a href="#contact" class="text-white text-decoration-none"
+                >Contact</a
+              >
+            </p>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              contact
+            </h5>
+            <p>
+              <i class="bi bi-geo-alt m-1"></i>Purwosari, Pasuruan - Jawa Timur
+            </p>
+            <p><i class="bi bi-envelope m-1"></i>spacondstore@gmail.com</p>
+            <p><i class="bi bi-instagram m-1"></i>@spacond_store</p>
+            <p>
+              <i class="bi bi-telephone m-1"></i>(+62) 882-1741-8481 (Nugrah)
+            </p>
+            <p>
+              <i class="bi bi-telephone m-1"></i>(+62) 895-3312-76755 (Hammam)
+            </p>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              &copy; Copyright all right Reserved by:
+              <a href="#" style="text-decoration: none">
+                <strong class="text-info font"
+                  >SPA<span class="text-white font">COND Store</span></strong
+                >
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="#footer"
+                    onclick="alert('Maaf, halaman belum tersedia!!');"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#footer"
+                    onclick="alert('Maaf, halaman belum tersedia!!');"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                    ><i class="bi bi-discord"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#footer"
+                    onclick="alert('Maaf, halaman belum tersedia!!');"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                    ><i class="bi bi-threads"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
