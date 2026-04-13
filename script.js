@@ -1,10 +1,3 @@
-// Opening Loading Screen
-window.addEventListener('load', function() {
-    setTimeout(function() {
-      document.querySelector('.loader-container').style.display = 'none';
-    }, 1250); 
-});
-
 // Sneakers
 function sneakers_1(){
     document.getElementById("sneakers1").innerHTML = "Success";
